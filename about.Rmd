@@ -1,0 +1,12 @@
+---
+title: "about"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+This is where I would write all about my website.
+
+[go home](index.html)

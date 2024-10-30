@@ -1,16 +1,19 @@
 ---
-title: "All About Alishah"
+title: "Alishah's Webpage"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This is Alishah's website
+# Welcome!
+I'm Alishah, a second-year MPH student at Columbia University. I'm passionate about healthtech, femtech and using epidemiological methods to further women's health research.
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
-[google](https://www.google.com/)
+<img src="images/DSC00380.jpg" style="width:75%">
 
 If you'd like to learn more about this website, visit [this page](about.html)
 
-## Subsection
+
+
+## Who I Am
+An avid matcha enthusiast, trail runner and Yankee-hater (go Sox!), I'm a UC Berkeley graduate who never hesitates to admit that she's currently on the wrong coast. Down the road, I want to found my own femtech company in the hormone health space. 

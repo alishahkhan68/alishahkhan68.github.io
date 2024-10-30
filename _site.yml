@@ -6,9 +6,11 @@ navbar:
     - text: "About"
       href: about.html
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:a-khan@berkeley.edu
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: http://github.com/alishahkhan68/
+    - icon: fa-brands fa-linkedin
+      href: https://www.linkedin.com/in/alishah-khan2023/
 output:
   html_document:
     theme: cerulean

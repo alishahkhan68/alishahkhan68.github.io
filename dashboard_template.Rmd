@@ -63,6 +63,6 @@ rest_bar_2
 
 Knit
 ```{r}
-rmarkdown::render("dashboard_template.Rmd", output_format = "flexdashboard::flex_dashboard")
+#rmarkdown::render("dashboard.Rmd", output_format = "flexdashboard::flex_dashboard")
 
 ```

@@ -1,0 +1,60 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    source: embed
+---
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+#library(flexdashboard)
+data(rest_inspec)
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r, echo=FALSE}
+rest_inspec_tidy = rest_inspec %>% 
+  drop_na() %>% 
+  select(boro, cuisine_description, dba, inspection_date, score, violation_code) %>% 
+  group_by(cuisine_description) %>% 
+  mutate(mean_score_by_cuisine = mean(score, na.rm = TRUE)) 
+
+rest_box = rest_inspec_tidy %>% 
+  drop_na(boro, score) %>% 
+  plot_ly(y = ~score, color = ~boro, type = "box", colors = "viridis")
+
+rest_box
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r, echo=FALSE}
+rest_bar = rest_inspec_tidy %>%
+  count(boro) %>% 
+  mutate(boro = fct_reorder(boro, n)) %>% 
+  plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
+
+rest_bar
+```
+
+### Chart C
+
+```{r, echo=FALSE}
+rest_bar_2 = rest_inspec_tidy %>% 
+  count(cuisine_description) %>% 
+  plot_ly(x = ~cuisine_description, y= ~n, color =~cuisine_description, type = "bar", colors = "viridis")
+
+rest_bar_2
+```

@@ -19,4 +19,4 @@ An avid matcha enthusiast, trail runner and Yankee-hater (go Sox!), I'm a UC Ber
 ## Links
 If you'd like to learn more about this website, visit [this page](about.html)
 
-If you would like to see some plots I created, go [here](dashboard.html)
+If you would like to see some plots I created, go [here](dashboard_template.html)
